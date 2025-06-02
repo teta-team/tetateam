@@ -106,15 +106,25 @@ function HomePage() {
         <div className="container">
           <h2>آخرین پروژه های تتا تیم</h2>
           <div className="projects-row">
-            <Link to="" className="box">
-              <img src="./assets/images/tetalearn.png" alt="سایت تتالرن" />
-              <h3>سایت تتالرن</h3>
-            </Link>
+            <ul>
+              <Link to="" className="box">
+                <img src="./assets/images/tetalearn.png" alt="سایت تتالرن" />
+                <h3>سایت تتالرن</h3>
+              </Link>
+              <Link to="" className="box">
+                <img src="./assets/images/tetalearn.png" alt="سایت تتالرن" />
+                <h3>سایت تتالرن</h3>
+              </Link>
+              <Link to="" className="box">
+                <img src="./assets/images/tetalearn.png" alt="سایت تتالرن" />
+                <h3>سایت تتالرن</h3>
+              </Link>
+            </ul>
           </div>
         </div>
       </div>
 
-      {/* ساخت نقشه مراحل انجام پروژه */}
+      {/*  نقشه مراحل انجام پروژه*/}
 
       <ProjectProgress />
 

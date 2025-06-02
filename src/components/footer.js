@@ -3,7 +3,7 @@ function Footer() {
     <footer>
       <div className="container">
         <p>
-          Powered By <strong>TETA-TEAM</strong> · 2024
+          Powered With 💚 By <strong>TETA-TEAM</strong> · 2024
         </p>
       </div>
     </footer>

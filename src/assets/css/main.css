@@ -137,9 +137,7 @@ button {
 
 .main header nav li {
   margin-left: 5px;
-  padding: 8px 15px;
   border-radius: 10px;
-  cursor: pointer;
   transition: all 0.2s ease;
 }
 
@@ -149,6 +147,8 @@ button {
 }
 
 .main header nav li a {
+  padding: 8px 15px;
+  display: inline-block;
   transition: all 0.2s ease;
 }
 
@@ -286,6 +286,7 @@ button {
   font-size: 26px;
   color: var(--color-accent);
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .main .about-home .right p {
@@ -353,11 +354,15 @@ button {
 
 .main .last-projects .projects-row {
   width: 100%;
+  margin-top: 20px;
+}
+
+.main .last-projects .projects-row ul {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 .main .last-projects .projects-row a {
@@ -590,6 +595,110 @@ button {
 
 /*
 |------------------------------------------------------|
+|=====================|  PROJECTS PAGE  |==============|
+|------------------------------------------------------|
+*/
+
+.main .projects-page .header {
+  width: 100%;
+}
+
+.main .projects-page .header .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-left: 1px dashed #2d2f31;
+  border-right: 1px dashed #2d2f31;
+}
+
+.main .projects-page .header h1 {
+  width: 100%;
+  text-align: center;
+  font-family: estedad-bold;
+  position: relative;
+}
+
+.main .projects-page .header h1::before {
+  content: "";
+  border-bottom: 1px solid #3f3f3f;
+  width: 38%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.main .projects-page .header h1::after {
+  content: "";
+  border-bottom: 1px solid #3f3f3f;
+  width: 38%;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.main .projects-page .projects .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-left: 1px dashed #2d2f31;
+  border-right: 1px dashed #2d2f31;
+  border-bottom: 1px dashed #2d2f31;
+}
+
+.main .projects-page .projects a {
+  display: inline-block;
+  width: 32%;
+  box-shadow: 0 0 10px #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease;
+  margin-bottom: 25px;
+}
+
+.main .projects-page .projects .box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.main .projects-page .projects .box h3 {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  font-family: estedad-bold;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.main .projects-page .projects a:hover img {
+  filter: brightness(20%);
+  transition: all 0.2s ease;
+}
+
+.main .projects-page .projects a:hover h3 {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+}
+
+/*
+|------------------------------------------------------|
 |=====================|  FOOTER  |=====================|
 |------------------------------------------------------|
 */
@@ -619,4 +728,127 @@ button {
 
 .main footer p strong {
   color: var(--color-primary);
+}
+
+/*
+|------------------------------------------------------|
+|=====================|  RESPONSIVE  |=================|
+|------------------------------------------------------|
+*/
+
+/* LAPTOP */
+
+/* TABLET */
+
+/* MOBILE */
+
+@media only screen and (max-width: 480px) {
+  .main header .container {
+    justify-content: center;
+  }
+
+  .main header .logo img {
+    display: none;
+  }
+
+  .main .about-home .container {
+    flex-direction: column;
+  }
+
+  .main .about-home .right h2 {
+    width: 100%;
+  }
+
+  .main .about-home .right {
+    width: 100%;
+  }
+
+  .main .about-home .left {
+    width: 100%;
+    height: 300px;
+  }
+
+  .main .about-home .left img {
+    position: absolute;
+  }
+
+  .main .about-home .left img {
+    width: 270px;
+    height: 220px;
+  }
+
+  .main .about-home .left img:nth-child(1) {
+    transform: rotate(-10deg) translateX(0);
+  }
+  .main .about-home .left img:nth-child(2) {
+    transform: rotate(10deg) translateX(0);
+  }
+  .main .about-home .left img:nth-child(3) {
+    transform: rotate(0deg) translateX(0);
+  }
+
+  .main .last-projects h2 {
+    width: 100%;
+  }
+
+  .main .last-projects .projects-row {
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .main .last-projects .projects-row ul {
+    width: fit-content;
+    padding: 5px;
+  }
+
+  .main .last-projects .projects-row a {
+    display: inline-block;
+    width: 400px;
+    margin-left: 20px;
+  }
+
+  .main .last-projects .projects-row a:hover img {
+    filter: brightness(100%);
+  }
+  
+  .main .last-projects .projects-row a:hover h3 {
+    top: 120%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main .project-progress h2 {
+    width: 100%;
+  }
+
+  .main .project-progress .map {
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .main .projects-page .header h1::before {
+    display: none;
+  }
+
+  .main .projects-page .header h1::after {
+    display: none;
+  }
+
+  .main .projects-page .projects .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .main .projects-page .projects a {
+    width: 100%;
+  }
+
+  .main .projects-page .projects a:hover img {
+    filter: brightness(100%);
+  }
+  
+  .main .projects-page .projects a:hover h3 {
+    top: 120%;
+    transform: translate(-50%, -50%);
+  }
 }
