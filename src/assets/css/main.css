@@ -138,7 +138,6 @@ button {
 .main header nav li {
   margin-left: 5px;
   border-radius: 10px;
-  transition: all 0.2s ease;
 }
 
 .main header nav li:hover {
@@ -699,6 +698,229 @@ button {
 
 /*
 |------------------------------------------------------|
+|=====================|  ABOUT PAGE  |=================|
+|------------------------------------------------------|
+*/
+
+.main .about .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-left: 1px dashed #2d2f31;
+  border-right: 1px dashed #2d2f31;
+  border-bottom: 1px dashed #2d2f31;
+}
+
+.main .about .header h1 {
+  width: 100%;
+  text-align: center;
+  font-family: estedad-bold;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.main .about .header h1::before {
+  content: "";
+  border-bottom: 1px solid #3f3f3f;
+  width: 38%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.main .about .header h1::after {
+  content: "";
+  border-bottom: 1px solid #3f3f3f;
+  width: 38%;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.main .about .about-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main .about .about-box .right {
+  width: 50%;
+}
+
+.main .about .about-box .right p {
+  line-height: 2;
+  text-align: justify;
+}
+
+.main .about .about-box .left {
+  width: 40%;
+}
+
+.main .about .about-box .left img {
+  width: 80%;
+}
+
+.main .users .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-left: 1px dashed #2d2f31;
+  border-right: 1px dashed #2d2f31;
+  border-bottom: 1px dashed #2d2f31;
+}
+
+.main .users h2 {
+  width: 100%;
+  text-align: center;
+  font-family: estedad-bold;
+  position: relative;
+}
+
+.main .users h2::before {
+  content: "";
+  border-bottom: 1px solid #3f3f3f;
+  width: 41%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.main .users h2::after {
+  content: "";
+  border-bottom: 1px solid #3f3f3f;
+  width: 41%;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.main .users .users-info {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.main .users .users-info .user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #18191a;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.main .users .users-info .user:nth-child(odd) {
+  flex-direction: row;
+}
+.main .users .users-info .user:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.main .users .users-info .user .right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .users .users-info .user .right img {
+  width: 70%;
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  margin-bottom: 20px;
+}
+
+.main .users .users-info .user .right h2 {
+  font-family: estedad-bold;
+  color: var(--color-accent);
+}
+
+.main .users .users-info .user:nth-child(1) .right img {
+  border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+}
+.main .users .users-info .user:nth-child(2) .right img {
+  border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+}
+.main .users .users-info .user:nth-child(3) .right img {
+  border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+}
+
+.main .users .users-info .user .left {
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+}
+
+.main .users .users-info .user .left .about {
+  text-align: justify;
+  line-height: 2;
+}
+
+.main .users .users-info .user .left #skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  direction: ltr;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px dashed #3f3f3f;
+  padding-top: 30px;
+}
+
+.main .users .users-info .user .left #skills .skill-box {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.main .users .users-info .user .left #skills .skill-box h3 {
+  font-size: 20px;
+}
+
+.main .users .users-info .user .left #skills .skill-box .fill-box {
+  width: 85%;
+  height: 10px;
+  background-color: var(--color-background);
+  border-radius: 10px;
+}
+
+.main .users .users-info .user .left #skills .skill-box .fill-box .fill {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 10px;
+  position: relative;
+}
+
+.main .users .users-info .user .left #skills .skill-box .fill-box .fill p{
+  font-family: estedad-thin;
+  font-size: 14px;
+  background-color: var(--color-background);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10%;
+  right: -20px;
+}
+
+/*
+|------------------------------------------------------|
 |=====================|  FOOTER  |=====================|
 |------------------------------------------------------|
 */
@@ -811,7 +1033,7 @@ button {
   .main .last-projects .projects-row a:hover img {
     filter: brightness(100%);
   }
-  
+
   .main .last-projects .projects-row a:hover h3 {
     top: 120%;
     transform: translate(-50%, -50%);
@@ -826,10 +1048,7 @@ button {
     scrollbar-width: none;
   }
 
-  .main .projects-page .header h1::before {
-    display: none;
-  }
-
+  .main .projects-page .header h1::before,
   .main .projects-page .header h1::after {
     display: none;
   }
@@ -846,9 +1065,62 @@ button {
   .main .projects-page .projects a:hover img {
     filter: brightness(100%);
   }
-  
+
   .main .projects-page .projects a:hover h3 {
     top: 120%;
     transform: translate(-50%, -50%);
+  }
+
+  .main .about .header h1::before,
+  .main .about .header h1::after {
+    display: none;
+  }
+
+  .main .about .about-box {
+    flex-direction: column;
+  }
+
+  .main .about .about-box .right,
+  .main .about .about-box .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main .users h2::before,
+  .main .users h2::after {
+    display: none;
+  }
+
+  .main .users .users-info .user {
+    flex-direction: column !important;
+  }
+
+  .main .users .users-info .user .right {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main .users .users-info .user .right img {
+    width: 30%;
+    margin: 20px 20px 20px 0;
+  }
+
+  .main .users .users-info .user .right h2 {
+    margin: 0;
+  }
+
+  .main .users .users-info .user .left {
+    width: 100%;
+  }
+
+  .main .users .users-info .user .left #skills .skill-box {
+    width: 100%;
+  }
+
+  .main .users .users-info .user .left #skills .skill-box .fill-box {
+    width: 97%;
   }
 }

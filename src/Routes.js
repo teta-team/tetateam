@@ -6,6 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import MainPages from "./pages/layouts/mainPages";
 import HomePage from "./pages/main/home";
 import ProjectsPage from "./pages/main/projects";
+import AboutPage from "./pages/main/about";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<MainPages />}>
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
+          <Route path="about" element={<AboutPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

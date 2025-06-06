@@ -43,7 +43,7 @@ function HomePage() {
               title="Github"
               target="_blank"
             >
-              <i class="bi bi-github"></i>
+              <i className="bi bi-github"></i>
             </Link>
             <Link
               to="https://t.me/tetateam_ir"
@@ -51,13 +51,13 @@ function HomePage() {
               title="Telegram"
               target="_blank"
             >
-              <i class="bi bi-telegram"></i>
+              <i className="bi bi-telegram"></i>
             </Link>
             <Link to="" className="email" title="Email" target="_blank">
-              <i class="bi bi-envelope-at"></i>
+              <i className="bi bi-envelope-at"></i>
             </Link>
             <Link to="" className="discord" title="Discord" target="_blank">
-              <i class="bi bi-discord"></i>
+              <i className="bi bi-discord"></i>
             </Link>
           </div>
         </div>

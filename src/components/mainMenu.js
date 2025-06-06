@@ -2,7 +2,6 @@ import { Link, useLocation,  } from "react-router-dom";
 
 function MainMenu() {
   let location = useLocation().pathname
-  console.log(location);
   
   return (
     <header>
@@ -20,7 +19,7 @@ function MainMenu() {
             <Link to="/projects">پروژه ها</Link>
           </li>
           <li className={location === "/about" ? "active" : ""}>
-            <Link to="">درباره ما</Link>
+            <Link to="/about">درباره ما</Link>
           </li>
           <li className={location === "/contact" ? "active" : ""}>
             <Link to="">ارتباط با ما</Link>
