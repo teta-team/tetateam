@@ -6,7 +6,7 @@ function AboutPage() {
       <div className="about">
         <div className="container">
           <div className="header">
-            <h1>درباره تتا تیم</h1>
+            <h1>درباره تتاتیم</h1>
             <div className="about-box">
               <div className="right">
                 <p>
@@ -38,7 +38,7 @@ function AboutPage() {
 
       <div className="users">
         <div className="container">
-          <h2>افراد تتا تیم</h2>
+          <h2>افراد تتاتیم</h2>
           <div className="users-info">
             <User
               image="https://avatars.githubusercontent.com/u/143296865?v=4"

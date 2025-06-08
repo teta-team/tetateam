@@ -7,6 +7,7 @@ import MainPages from "./pages/layouts/mainPages";
 import HomePage from "./pages/main/home";
 import ProjectsPage from "./pages/main/projects";
 import AboutPage from "./pages/main/about";
+import ContactPage from "./pages/main/contact";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

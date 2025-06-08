@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ProjectProgress from "../../components/projectProgress";
+import ProjectCard from "../../components/projectCard";
 
 function HomePage() {
   useEffect(() => {
@@ -26,7 +27,7 @@ function HomePage() {
       <div className="welcome">
         <div className="container">
           <img src="./assets/images/logo512.png" alt="تتا تیم" />
-          <h1>تتا تیم</h1>
+          <h1>تتاتیم</h1>
           <p>
             شرکت تتا تیم یک شرکت با سابقه 3 سال فعالیت در حوزه کدنویسی وبسایت می
             باشد
@@ -68,7 +69,7 @@ function HomePage() {
       <div className="about-home">
         <div className="container">
           <div className="right">
-            <h2>درباره تتا تیم</h2>
+            <h2>درباره تتاتیم</h2>
             <p>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
@@ -104,21 +105,21 @@ function HomePage() {
 
       <div className="last-projects">
         <div className="container">
-          <h2>آخرین پروژه های تتا تیم</h2>
+          <h2>آخرین پروژه های تتاتیم</h2>
           <div className="projects-row">
             <ul>
-              <Link to="" className="box">
-                <img src="./assets/images/tetalearn.png" alt="سایت تتالرن" />
-                <h3>سایت تتالرن</h3>
-              </Link>
-              <Link to="" className="box">
-                <img src="./assets/images/tetalearn.png" alt="سایت تتالرن" />
-                <h3>سایت تتالرن</h3>
-              </Link>
-              <Link to="" className="box">
-                <img src="./assets/images/tetalearn.png" alt="سایت تتالرن" />
-                <h3>سایت تتالرن</h3>
-              </Link>
+              <ProjectCard
+                image="./assets/images/tetalearn.png"
+                name="سایت تتالرن"
+              />
+              <ProjectCard
+                image="./assets/images/tetalearn.png"
+                name="سایت تتالرن"
+              />
+              <ProjectCard
+                image="./assets/images/tetalearn.png"
+                name="سایت تتالرن"
+              />
             </ul>
           </div>
         </div>

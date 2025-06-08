@@ -22,7 +22,7 @@ function MainMenu() {
             <Link to="/about">درباره ما</Link>
           </li>
           <li className={location === "/contact" ? "active" : ""}>
-            <Link to="">ارتباط با ما</Link>
+            <Link to="/contact">ارتباط با ما</Link>
           </li>
         </nav>
       </div>
