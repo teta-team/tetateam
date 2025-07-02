@@ -748,7 +748,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .main .about .about-box .right {
@@ -762,10 +762,13 @@ button {
 
 .main .about .about-box .left {
   width: 40%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main .about .about-box .left img {
   width: 80%;
+  margin-left: 80px;
 }
 
 .main .users .container {

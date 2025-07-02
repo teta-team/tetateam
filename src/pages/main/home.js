@@ -1,10 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProjectProgress from "../../components/projectProgress";
 import ProjectCard from "../../components/projectCard";
+import axios from "axios";
 
 function HomePage() {
+  const [projects, setProjects] = useState([]);
+
   useEffect(() => {
+    axios
+      .get("http://5.57.35.227:5000/api/lastProjects")
+      .then((response) => setProjects(response.data))
+      .catch((error) => console.error("Error fetching data:", error));
+
     const paras = Array.from(document.querySelectorAll(".team-skills h4"));
     let currentIndex = 0;
 
@@ -108,18 +116,13 @@ function HomePage() {
           <h2>آخرین پروژه های تتاتیم</h2>
           <div className="projects-row">
             <ul>
-              <ProjectCard
-                image="./assets/images/tetalearn.png"
-                name="سایت تتالرن"
-              />
-              <ProjectCard
-                image="./assets/images/tetalearn.png"
-                name="سایت تتالرن"
-              />
-              <ProjectCard
-                image="./assets/images/tetalearn.png"
-                name="سایت تتالرن"
-              />
+              {projects.map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  image={project.banner}
+                  name={project.title}
+                />
+              ))}
             </ul>
           </div>
         </div>
