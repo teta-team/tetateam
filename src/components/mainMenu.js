@@ -8,7 +8,7 @@ function MainMenu() {
       <div className="container">
         <div className="logo">
           <Link to="/">
-            <img src="./assets/images/logo512.png" alt="teta team logo" />
+            <img src={`${process.env.PUBLIC_URL}/assets/images/logo512.png`} alt="teta team logo" />
           </Link>
         </div>
         <nav>

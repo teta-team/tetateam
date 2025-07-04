@@ -7,7 +7,6 @@ function User({image,name, about, skills}) {
         <h2>{name}</h2>
       </div>
       <div className="left">
-        <p className="about">{about}</p>
         <div id="skills">
           {skillsList.map((skill, index) => (
             <div className="skill-box" key={index}>

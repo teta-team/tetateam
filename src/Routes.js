@@ -8,7 +8,8 @@ import HomePage from "./pages/main/home";
 import ProjectsPage from "./pages/main/projects";
 import AboutPage from "./pages/main/about";
 import ContactPage from "./pages/main/contact";
-import LoginPage from "./pages/login";
+import ProjectInfo from "./pages/main/projectInfo";
+import NotFound from "./pages/main/404";
 
 
 function App() {
@@ -18,11 +19,11 @@ function App() {
         <Route path="/" element={<MainPages />}>
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
+          <Route path="projects/:id" element={<ProjectInfo />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
-
-        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );

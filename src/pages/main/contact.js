@@ -46,17 +46,17 @@ function ContactPage() {
           <h1>ارتباط با تتاتیم</h1>
           <div className="contact-boxs">
             <div className="box">
-              <i class="bi bi-envelope-at"></i>
+              <i className="bi bi-envelope-at"></i>
               <h2>ایمیل تتاتیم</h2>
               <p>info@teta-team.com</p>
             </div>
             <div className="box">
-              <i class="bi bi-telegram"></i>
+              <i className="bi bi-telegram"></i>
               <h2>ربات تتاتیم</h2>
               <p>@tetateam_bot</p>
             </div>
             <div className="box">
-              <i class="bi bi-telephone"></i>
+              <i className="bi bi-telephone"></i>
               <h2>تلفن تتاتیم</h2>
               <p>041-12345678</p>
             </div>

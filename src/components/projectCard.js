@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-function ProjectCard({ image, name }) {
+function ProjectCard({ id, image, name }) {
   return (
-    <Link to="" className="box">
-      <img src={image} alt={name} />
+    <Link to={`/projects/${id}`} className="box">
+      <img src={`${process.env.PUBLIC_URL}/assets/images/${image}`} alt={name} />
       <h3>{name}</h3>
     </Link>
   );
