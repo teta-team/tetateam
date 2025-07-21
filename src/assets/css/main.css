@@ -1677,6 +1677,11 @@ button {
     width: 100%;
   }
 
+  .main .form .form-box form input:not([type="checkbox"]),
+  .main .form .form-box textarea {
+    width: 100%;
+  }
+
   .main .form .form-box .left {
     width: 100%;
   }
