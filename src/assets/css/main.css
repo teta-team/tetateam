@@ -1212,9 +1212,8 @@ button {
   width: 50%;
   padding: 20px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -1228,6 +1227,7 @@ button {
   border-radius: 10px;
   margin-bottom: 8px;
   text-align: center;
+  align-self: flex-start;
 }
 
 .main .form .form-box form input:not([type="checkbox"]):focus {
@@ -1415,7 +1415,7 @@ button {
   }
 
   .main .projects-page .projects .box {
-    width: 500px;
+    width: 100%;
   }
 
   .main .about .header h1::before,
@@ -1621,7 +1621,7 @@ button {
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .main .users .users-info .user .right img {
@@ -1631,6 +1631,7 @@ button {
 
   .main .users .users-info .user .right h2 {
     margin: 0;
+    margin-right: 30px;
   }
 
   .main .users .users-info .user .left {
@@ -1702,7 +1703,12 @@ button {
   }
 
   .main .project-info .right .tags {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main .project-info .right .tags p {
+    margin-bottom: 5px;
   }
 
   .main .not-found {
